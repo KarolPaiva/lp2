@@ -37,7 +37,7 @@ public class Ponto{
 	double ky = p2.getY() - p1.getY();
 	double d = Math.sqrt( kx * kx + ky * ky);
 
-
+	System.out.println (d);
 	System.out.println(p1.getX() + " - " + p1.getY());
 	System.out.println(p2.getX() + " - " + p2.getY());
 	System.out.println(p3.getX() + " - " + p3.getY());
