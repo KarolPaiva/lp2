@@ -15,7 +15,6 @@ public class Principal{
 		Aluno d = new Aluno();
 			d.setNome("Birma");
 			d.setIdade(17);
-
 		Aluno e = new Aluno();
 			e.setNome("Teteu");
 			e.setIdade(17);
@@ -27,9 +26,20 @@ public class Principal{
 		e.add(d);
 		e.add(e);
 
+		Disciplina d1 new Disciplina();
+			d1.setNome("LP2");
+			d1.setProf("Betinho");
+
+		Disciplina d2 new Disciplina();
+			d2.setNome("Web");
+			d2.setPProf("Marcelo");
+
+		
+
+
 public class Ordenar implements Comparable<Ordenar>{
 	public int compareTo(Auno novo){
-		if(this.idade > novo.getIdade()){
+		if(this.idade < novo.getIdade()){
 			return 1;
 		}
 		if(this.idade > novo.getIdade()){
