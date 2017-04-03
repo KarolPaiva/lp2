@@ -27,7 +27,7 @@ public class Lista{
 		public void inserir(int i){
 			No novo = new i No();
 			novo.setI(i);
-			this.i = novo;
+			this.f = novo;
 			cabeca = fim;
 		}
 		public void remover(){
