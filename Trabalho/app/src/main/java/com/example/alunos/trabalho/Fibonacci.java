@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import java.util.Stack;
+//BIBLIOTECAS
 
 public class Fibonacci extends AppCompatActivity {
 
@@ -16,16 +16,16 @@ public class Fibonacci extends AppCompatActivity {
         setContentView(R.layout.activity_fibonacci);
     }
 
- Stack pilha = new Stack();
+ Stack pilha = new Stack();//CRIA UMA PILHA
     public void fibo(View n){
-        while(pilha.size()>0) pilha.pop();
+        while(pilha.size()>0) pilha.pop();//DESEMPILHA ATÉ A PILHA FICAR VAZIA
         EditText pos = (EditText) findViewById(R.id.input);
-        int num = Integer.parseInt(pos.getText().toString());
-        pilha.push(0);
-        pilha.push(1);
+        int num = Integer.parseInt(pos.getText().toString());//TRANSFORMA A VARIÁVEL PARA INTEIRO
+        pilha.push(0);//COLOCA O 0 NA PILHA (PRIMEIRO VALOR)
+        pilha.push(1);//COLOCA O 1 NA PILHA (SEGUNDO VALOR)
         for (int i=0; i<num-2; i++){
-            int n1=Integer.parseInt(pilha.pop().toString()); //transfoma pra int o ultimo
-            int n2=Integer.parseInt(pilha.pop().toString()); //penultimo
+            int n1=Integer.parseInt(pilha.pop().toString()); //transfoma pra int o último
+            int n2=Integer.parseInt(pilha.pop().toString()); //penúltimo
             pilha.push(n2);
             pilha.push(n1);
             pilha.push(n1+n2);
