@@ -14,7 +14,7 @@ public class Fibonacci extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fibonacci);
-    }
+    }//função para abrir a tel "fibonacci" a partir da tela principal
 
  Stack pilha = new Stack();//CRIA UMA PILHA
     public void fibo(View n){
