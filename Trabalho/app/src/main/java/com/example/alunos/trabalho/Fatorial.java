@@ -14,7 +14,7 @@ public class Fatorial extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_fatorial);
-    }
+    }//funçaõ para abrir a tela fatorial a partir da página inicial
 
 
     public void  calcfatorial (View n){
@@ -24,8 +24,8 @@ public class Fatorial extends AppCompatActivity {
         for (int i=1; i<=num; i++){
             y*=i;
         }//função para calcular o fatorial do valor indicado
-        TextView x = (TextView) findViewById(R.id.idfm);
-        x.setText(Integer.toString(y));
+        TextView x = (TextView) findViewById(R.id.idfm);//variável que recebe o id do local de resposta
+        x.setText(Integer.toString(y));//mostrando o valor como uma string 
 
     }
 
